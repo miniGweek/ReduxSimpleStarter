@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Videos = () =>{
-    return (
+ const VideoList = props =>{
+        const videos = props.videos;
+        return (
         <ul className="col-md-4 list-group">
-        Hi! I am a unordered List!
-        </ul>
-    );
-}
+            {props.videos.length}
+        </ul>);
+ }
 
-export default Videos;
+
+export default VideoList;
